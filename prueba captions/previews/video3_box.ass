@@ -1,0 +1,55 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: S,Inter Display Black,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,6,0,2,70,70,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.08,0:00:00.56,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Ventas\h\h {\3c&H000000&\bord6}especiales\h\h {\3c&H000000&\bord6}para\h\h {\3c&H000000&\bord6}clientes
+Dialogue: 0,0:00:00.56,0:00:01.28,S,,0,0,0,,{\3c&H000000&\bord6}Ventas\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}especiales\h\h {\3c&H000000&\bord6}para\h\h {\3c&H000000&\bord6}clientes
+Dialogue: 0,0:00:01.28,0:00:01.52,S,,0,0,0,,{\3c&H000000&\bord6}Ventas\h\h {\3c&H000000&\bord6}especiales\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}para\h\h {\3c&H000000&\bord6}clientes
+Dialogue: 0,0:00:01.52,0:00:02.08,S,,0,0,0,,{\3c&H000000&\bord6}Ventas\h\h {\3c&H000000&\bord6}especiales\h\h {\3c&H000000&\bord6}para\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}clientes
+Dialogue: 0,0:00:02.08,0:00:02.80,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}especiales.
+Dialogue: 0,0:00:02.80,0:00:02.96,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Y\h\h {\3c&H000000&\bord6}por\h\h {\3c&H000000&\bord6}eso\h\h {\3c&H000000&\bord6}Ebenezer
+Dialogue: 0,0:00:02.96,0:00:03.12,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}por\h\h {\3c&H000000&\bord6}eso\h\h {\3c&H000000&\bord6}Ebenezer
+Dialogue: 0,0:00:03.12,0:00:03.44,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}por\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}eso\h\h {\3c&H000000&\bord6}Ebenezer
+Dialogue: 0,0:00:03.44,0:00:04.24,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}por\h\h {\3c&H000000&\bord6}eso\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}Ebenezer
+Dialogue: 0,0:00:04.24,0:00:04.64,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Auto\h\h {\3c&H000000&\bord6}está\h\h {\3c&H000000&\bord6}presente\h\h {\3c&H000000&\bord6}en
+Dialogue: 0,0:00:04.64,0:00:04.88,S,,0,0,0,,{\3c&H000000&\bord6}Auto\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}está\h\h {\3c&H000000&\bord6}presente\h\h {\3c&H000000&\bord6}en
+Dialogue: 0,0:00:04.88,0:00:05.28,S,,0,0,0,,{\3c&H000000&\bord6}Auto\h\h {\3c&H000000&\bord6}está\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}presente\h\h {\3c&H000000&\bord6}en
+Dialogue: 0,0:00:05.28,0:00:05.36,S,,0,0,0,,{\3c&H000000&\bord6}Auto\h\h {\3c&H000000&\bord6}está\h\h {\3c&H000000&\bord6}presente\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}en
+Dialogue: 0,0:00:05.36,0:00:05.52,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}el\h\h {\3c&H000000&\bord6}Knockout,
+Dialogue: 0,0:00:05.52,0:00:06.32,S,,0,0,0,,{\3c&H000000&\bord6}el\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}Knockout,
+Dialogue: 0,0:00:06.32,0:00:06.48,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}el\h\h {\3c&H000000&\bord6}evento\h\h {\3c&H000000&\bord6}más\h\h {\3c&H000000&\bord6}grande
+Dialogue: 0,0:00:06.48,0:00:06.88,S,,0,0,0,,{\3c&H000000&\bord6}el\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}evento\h\h {\3c&H000000&\bord6}más\h\h {\3c&H000000&\bord6}grande
+Dialogue: 0,0:00:06.88,0:00:07.12,S,,0,0,0,,{\3c&H000000&\bord6}el\h\h {\3c&H000000&\bord6}evento\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}más\h\h {\3c&H000000&\bord6}grande
+Dialogue: 0,0:00:07.12,0:00:07.52,S,,0,0,0,,{\3c&H000000&\bord6}el\h\h {\3c&H000000&\bord6}evento\h\h {\3c&H000000&\bord6}más\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}grande
+Dialogue: 0,0:00:07.52,0:00:07.68,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}autos\h\h {\3c&H000000&\bord6}en\h\h {\3c&H000000&\bord6}Puerto
+Dialogue: 0,0:00:07.68,0:00:08.32,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}autos\h\h {\3c&H000000&\bord6}en\h\h {\3c&H000000&\bord6}Puerto
+Dialogue: 0,0:00:08.32,0:00:08.48,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}autos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}en\h\h {\3c&H000000&\bord6}Puerto
+Dialogue: 0,0:00:08.48,0:00:08.88,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}autos\h\h {\3c&H000000&\bord6}en\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}Puerto
+Dialogue: 0,0:00:08.88,0:00:09.28,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Rico.
+Dialogue: 0,0:00:09.28,0:00:09.60,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Ven\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}descubre\h\h {\3c&H000000&\bord6}nuestra
+Dialogue: 0,0:00:09.60,0:00:09.76,S,,0,0,0,,{\3c&H000000&\bord6}Ven\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}descubre\h\h {\3c&H000000&\bord6}nuestra
+Dialogue: 0,0:00:09.76,0:00:10.40,S,,0,0,0,,{\3c&H000000&\bord6}Ven\h\h {\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}descubre\h\h {\3c&H000000&\bord6}nuestra
+Dialogue: 0,0:00:10.40,0:00:10.80,S,,0,0,0,,{\3c&H000000&\bord6}Ven\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}descubre\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}nuestra
+Dialogue: 0,0:00:10.80,0:00:11.04,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}gran\h\h {\3c&H000000&\bord6}variedad\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}vehículos
+Dialogue: 0,0:00:11.04,0:00:11.44,S,,0,0,0,,{\3c&H000000&\bord6}gran\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}variedad\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}vehículos
+Dialogue: 0,0:00:11.44,0:00:11.60,S,,0,0,0,,{\3c&H000000&\bord6}gran\h\h {\3c&H000000&\bord6}variedad\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}vehículos
+Dialogue: 0,0:00:11.60,0:00:12.16,S,,0,0,0,,{\3c&H000000&\bord6}gran\h\h {\3c&H000000&\bord6}variedad\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}vehículos
+Dialogue: 0,0:00:12.16,0:00:12.32,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}las\h\h {\3c&H000000&\bord6}oportunidades\h\h {\3c&H000000&\bord6}especiales
+Dialogue: 0,0:00:12.32,0:00:12.56,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}las\h\h {\3c&H000000&\bord6}oportunidades\h\h {\3c&H000000&\bord6}especiales
+Dialogue: 0,0:00:12.56,0:00:13.28,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}las\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}oportunidades\h\h {\3c&H000000&\bord6}especiales
+Dialogue: 0,0:00:13.28,0:00:13.92,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}las\h\h {\3c&H000000&\bord6}oportunidades\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}especiales
+Dialogue: 0,0:00:13.92,0:00:14.16,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}que\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H000000&\bord6}para\h\h {\3c&H000000&\bord6}ti.
+Dialogue: 0,0:00:14.16,0:00:14.56,S,,0,0,0,,{\3c&H000000&\bord6}que\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}tenemos\h\h {\3c&H000000&\bord6}para\h\h {\3c&H000000&\bord6}ti.
+Dialogue: 0,0:00:14.56,0:00:14.88,S,,0,0,0,,{\3c&H000000&\bord6}que\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}para\h\h {\3c&H000000&\bord6}ti.
+Dialogue: 0,0:00:14.88,0:00:15.60,S,,0,0,0,,{\3c&H000000&\bord6}que\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H000000&\bord6}para\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}ti.
+Dialogue: 0,0:00:15.60,0:00:15.92,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Te\h\h {\3c&H000000&\bord6}esperamos.
+Dialogue: 0,0:00:15.92,0:00:18.17,S,,0,0,0,,{\3c&H000000&\bord6}Te\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}esperamos.

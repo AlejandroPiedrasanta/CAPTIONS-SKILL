@@ -1,0 +1,55 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: S,Anton,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H99000000,0,0,0,0,100,100,2,0,1,9,6,2,60,60,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.08,0:00:00.56,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}VENTAS {\c&HFFFFFF&\fscx100\fscy100}ESPECIALES {\c&HFFFFFF&\fscx100\fscy100}PARA
+Dialogue: 0,0:00:00.56,0:00:01.28,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}VENTAS {\c&H00E5FF&\fscx112\fscy112}ESPECIALES {\c&HFFFFFF&\fscx100\fscy100}PARA
+Dialogue: 0,0:00:01.28,0:00:01.52,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}VENTAS {\c&HFFFFFF&\fscx100\fscy100}ESPECIALES {\c&H00E5FF&\fscx112\fscy112}PARA
+Dialogue: 0,0:00:01.52,0:00:02.08,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}CLIENTES {\c&HFFFFFF&\fscx100\fscy100}ESPECIALES.
+Dialogue: 0,0:00:02.08,0:00:02.80,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}CLIENTES {\c&H00E5FF&\fscx112\fscy112}ESPECIALES.
+Dialogue: 0,0:00:02.80,0:00:02.96,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}Y {\c&HFFFFFF&\fscx100\fscy100}POR {\c&HFFFFFF&\fscx100\fscy100}ESO
+Dialogue: 0,0:00:02.96,0:00:03.12,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}Y {\c&H00E5FF&\fscx112\fscy112}POR {\c&HFFFFFF&\fscx100\fscy100}ESO
+Dialogue: 0,0:00:03.12,0:00:03.44,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}Y {\c&HFFFFFF&\fscx100\fscy100}POR {\c&H00E5FF&\fscx112\fscy112}ESO
+Dialogue: 0,0:00:03.44,0:00:04.24,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}EBENEZER {\c&HFFFFFF&\fscx100\fscy100}AUTO {\c&HFFFFFF&\fscx100\fscy100}ESTÁ
+Dialogue: 0,0:00:04.24,0:00:04.64,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}EBENEZER {\c&H00E5FF&\fscx112\fscy112}AUTO {\c&HFFFFFF&\fscx100\fscy100}ESTÁ
+Dialogue: 0,0:00:04.64,0:00:04.88,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}EBENEZER {\c&HFFFFFF&\fscx100\fscy100}AUTO {\c&H00E5FF&\fscx112\fscy112}ESTÁ
+Dialogue: 0,0:00:04.88,0:00:05.28,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}PRESENTE {\c&HFFFFFF&\fscx100\fscy100}EN {\c&HFFFFFF&\fscx100\fscy100}EL
+Dialogue: 0,0:00:05.28,0:00:05.36,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}PRESENTE {\c&H00E5FF&\fscx112\fscy112}EN {\c&HFFFFFF&\fscx100\fscy100}EL
+Dialogue: 0,0:00:05.36,0:00:05.52,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}PRESENTE {\c&HFFFFFF&\fscx100\fscy100}EN {\c&H00E5FF&\fscx112\fscy112}EL
+Dialogue: 0,0:00:05.52,0:00:06.32,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}KNOCKOUT,
+Dialogue: 0,0:00:06.32,0:00:06.48,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}EL {\c&HFFFFFF&\fscx100\fscy100}EVENTO {\c&HFFFFFF&\fscx100\fscy100}MÁS
+Dialogue: 0,0:00:06.48,0:00:06.88,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}EL {\c&H00E5FF&\fscx112\fscy112}EVENTO {\c&HFFFFFF&\fscx100\fscy100}MÁS
+Dialogue: 0,0:00:06.88,0:00:07.12,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}EL {\c&HFFFFFF&\fscx100\fscy100}EVENTO {\c&H00E5FF&\fscx112\fscy112}MÁS
+Dialogue: 0,0:00:07.12,0:00:07.52,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}GRANDE {\c&HFFFFFF&\fscx100\fscy100}DE {\c&HFFFFFF&\fscx100\fscy100}AUTOS
+Dialogue: 0,0:00:07.52,0:00:07.68,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}GRANDE {\c&H00E5FF&\fscx112\fscy112}DE {\c&HFFFFFF&\fscx100\fscy100}AUTOS
+Dialogue: 0,0:00:07.68,0:00:08.32,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}GRANDE {\c&HFFFFFF&\fscx100\fscy100}DE {\c&H00E5FF&\fscx112\fscy112}AUTOS
+Dialogue: 0,0:00:08.32,0:00:08.48,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}EN {\c&HFFFFFF&\fscx100\fscy100}PUERTO {\c&HFFFFFF&\fscx100\fscy100}RICO.
+Dialogue: 0,0:00:08.48,0:00:08.88,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}EN {\c&H00E5FF&\fscx112\fscy112}PUERTO {\c&HFFFFFF&\fscx100\fscy100}RICO.
+Dialogue: 0,0:00:08.88,0:00:09.28,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}EN {\c&HFFFFFF&\fscx100\fscy100}PUERTO {\c&H00E5FF&\fscx112\fscy112}RICO.
+Dialogue: 0,0:00:09.28,0:00:09.60,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}VEN {\c&HFFFFFF&\fscx100\fscy100}Y {\c&HFFFFFF&\fscx100\fscy100}DESCUBRE
+Dialogue: 0,0:00:09.60,0:00:09.76,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}VEN {\c&H00E5FF&\fscx112\fscy112}Y {\c&HFFFFFF&\fscx100\fscy100}DESCUBRE
+Dialogue: 0,0:00:09.76,0:00:10.40,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}VEN {\c&HFFFFFF&\fscx100\fscy100}Y {\c&H00E5FF&\fscx112\fscy112}DESCUBRE
+Dialogue: 0,0:00:10.40,0:00:10.80,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}NUESTRA {\c&HFFFFFF&\fscx100\fscy100}GRAN {\c&HFFFFFF&\fscx100\fscy100}VARIEDAD
+Dialogue: 0,0:00:10.80,0:00:11.04,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}NUESTRA {\c&H00E5FF&\fscx112\fscy112}GRAN {\c&HFFFFFF&\fscx100\fscy100}VARIEDAD
+Dialogue: 0,0:00:11.04,0:00:11.44,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}NUESTRA {\c&HFFFFFF&\fscx100\fscy100}GRAN {\c&H00E5FF&\fscx112\fscy112}VARIEDAD
+Dialogue: 0,0:00:11.44,0:00:11.60,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}DE {\c&HFFFFFF&\fscx100\fscy100}VEHÍCULOS {\c&HFFFFFF&\fscx100\fscy100}Y
+Dialogue: 0,0:00:11.60,0:00:12.16,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}DE {\c&H00E5FF&\fscx112\fscy112}VEHÍCULOS {\c&HFFFFFF&\fscx100\fscy100}Y
+Dialogue: 0,0:00:12.16,0:00:12.32,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}DE {\c&HFFFFFF&\fscx100\fscy100}VEHÍCULOS {\c&H00E5FF&\fscx112\fscy112}Y
+Dialogue: 0,0:00:12.32,0:00:12.56,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}LAS {\c&HFFFFFF&\fscx100\fscy100}OPORTUNIDADES {\c&HFFFFFF&\fscx100\fscy100}ESPECIALES
+Dialogue: 0,0:00:12.56,0:00:13.28,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}LAS {\c&H00E5FF&\fscx112\fscy112}OPORTUNIDADES {\c&HFFFFFF&\fscx100\fscy100}ESPECIALES
+Dialogue: 0,0:00:13.28,0:00:13.92,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}LAS {\c&HFFFFFF&\fscx100\fscy100}OPORTUNIDADES {\c&H00E5FF&\fscx112\fscy112}ESPECIALES
+Dialogue: 0,0:00:13.92,0:00:14.16,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}QUE {\c&HFFFFFF&\fscx100\fscy100}TENEMOS {\c&HFFFFFF&\fscx100\fscy100}PARA
+Dialogue: 0,0:00:14.16,0:00:14.56,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}QUE {\c&H00E5FF&\fscx112\fscy112}TENEMOS {\c&HFFFFFF&\fscx100\fscy100}PARA
+Dialogue: 0,0:00:14.56,0:00:14.88,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}QUE {\c&HFFFFFF&\fscx100\fscy100}TENEMOS {\c&H00E5FF&\fscx112\fscy112}PARA
+Dialogue: 0,0:00:14.88,0:00:15.60,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}TI.
+Dialogue: 0,0:00:15.60,0:00:15.92,S,,0,0,0,,{\c&H00E5FF&\fscx112\fscy112}TE {\c&HFFFFFF&\fscx100\fscy100}ESPERAMOS.
+Dialogue: 0,0:00:15.92,0:00:18.17,S,,0,0,0,,{\c&HFFFFFF&\fscx100\fscy100}TE {\c&H00E5FF&\fscx112\fscy112}ESPERAMOS.

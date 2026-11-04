@@ -1,0 +1,233 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: S,Inter Display Black,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,6,0,2,70,70,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.24,0:00:00.88,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Bienvenidos\h\h {\3c&H000000&\bord6}a\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}casa
+Dialogue: 0,0:00:00.88,0:00:00.96,S,,0,0,0,,{\3c&H000000&\bord6}Bienvenidos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}a\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}casa
+Dialogue: 0,0:00:00.96,0:00:01.12,S,,0,0,0,,{\3c&H000000&\bord6}Bienvenidos\h\h {\3c&H000000&\bord6}a\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}mi\h\h {\3c&H000000&\bord6}casa
+Dialogue: 0,0:00:01.12,0:00:01.36,S,,0,0,0,,{\3c&H000000&\bord6}Bienvenidos\h\h {\3c&H000000&\bord6}a\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}casa
+Dialogue: 0,0:00:01.36,0:00:01.44,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}80\h\h {\3c&H000000&\bord6}metros\h\h {\3c&H000000&\bord6}cuadrados
+Dialogue: 0,0:00:01.44,0:00:01.84,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}80\h\h {\3c&H000000&\bord6}metros\h\h {\3c&H000000&\bord6}cuadrados
+Dialogue: 0,0:00:01.84,0:00:02.08,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}80\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}metros\h\h {\3c&H000000&\bord6}cuadrados
+Dialogue: 0,0:00:02.08,0:00:02.64,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}80\h\h {\3c&H000000&\bord6}metros\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}cuadrados
+Dialogue: 0,0:00:02.64,0:00:02.80,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}con\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}familia\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:02.80,0:00:02.96,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}una\h\h {\3c&H000000&\bord6}familia\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:02.96,0:00:03.20,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}una\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}familia\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:03.20,0:00:03.28,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}familia\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de
+Dialogue: 0,0:00:03.28,0:00:03.76,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}5.
+Dialogue: 0,0:00:03.76,0:00:04.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Solo\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}baño.
+Dialogue: 0,0:00:04.00,0:00:04.24,S,,0,0,0,,{\3c&H000000&\bord6}Solo\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}tenemos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}baño.
+Dialogue: 0,0:00:04.24,0:00:04.40,S,,0,0,0,,{\3c&H000000&\bord6}Solo\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}baño.
+Dialogue: 0,0:00:04.40,0:00:04.80,S,,0,0,0,,{\3c&H000000&\bord6}Solo\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}baño.
+Dialogue: 0,0:00:04.80,0:00:04.96,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Es\h\h {\3c&H000000&\bord6}amplio\h\h {\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}una
+Dialogue: 0,0:00:04.96,0:00:05.28,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}amplio\h\h {\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}una
+Dialogue: 0,0:00:05.28,0:00:05.36,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}amplio\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}con\h\h {\3c&H000000&\bord6}una
+Dialogue: 0,0:00:05.36,0:00:05.60,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}amplio\h\h {\3c&H000000&\bord6}con\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}una
+Dialogue: 0,0:00:05.60,0:00:06.08,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}mampara\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}gran
+Dialogue: 0,0:00:06.08,0:00:06.16,S,,0,0,0,,{\3c&H000000&\bord6}mampara\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}gran
+Dialogue: 0,0:00:06.16,0:00:06.24,S,,0,0,0,,{\3c&H000000&\bord6}mampara\h\h {\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}gran
+Dialogue: 0,0:00:06.24,0:00:06.40,S,,0,0,0,,{\3c&H000000&\bord6}mampara\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}gran
+Dialogue: 0,0:00:06.40,0:00:06.80,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}lavabo.
+Dialogue: 0,0:00:06.80,0:00:06.96,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Y\h\h {\3c&H000000&\bord6}siempre\h\h {\3c&H000000&\bord6}está\h\h {\3c&H000000&\bord6}limpio
+Dialogue: 0,0:00:06.96,0:00:07.20,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}siempre\h\h {\3c&H000000&\bord6}está\h\h {\3c&H000000&\bord6}limpio
+Dialogue: 0,0:00:07.20,0:00:07.36,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}siempre\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}está\h\h {\3c&H000000&\bord6}limpio
+Dialogue: 0,0:00:07.36,0:00:07.68,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}siempre\h\h {\3c&H000000&\bord6}está\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}limpio
+Dialogue: 0,0:00:07.68,0:00:07.76,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}ordenado.
+Dialogue: 0,0:00:07.76,0:00:08.40,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}ordenado.
+Dialogue: 0,0:00:08.40,0:00:08.56,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}habitación
+Dialogue: 0,0:00:08.56,0:00:08.72,S,,0,0,0,,{\3c&H000000&\bord6}Esta\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}es\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}habitación
+Dialogue: 0,0:00:08.72,0:00:08.80,S,,0,0,0,,{\3c&H000000&\bord6}Esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la\h\h {\3c&H000000&\bord6}habitación
+Dialogue: 0,0:00:08.80,0:00:09.12,S,,0,0,0,,{\3c&H000000&\bord6}Esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}la\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}habitación
+Dialogue: 0,0:00:09.12,0:00:09.20,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}hijo\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:09.20,0:00:09.36,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}mi\h\h {\3c&H000000&\bord6}hijo\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:09.36,0:00:09.68,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}hijo\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:09.68,0:00:09.76,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}hijo\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de
+Dialogue: 0,0:00:09.76,0:00:10.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}20\h\h {\3c&H000000&\bord6}años.
+Dialogue: 0,0:00:10.00,0:00:10.40,S,,0,0,0,,{\3c&H000000&\bord6}20\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}años.
+Dialogue: 0,0:00:10.40,0:00:10.64,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Tiene\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}gran\h\h {\3c&H000000&\bord6}cama
+Dialogue: 0,0:00:10.64,0:00:10.80,S,,0,0,0,,{\3c&H000000&\bord6}Tiene\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}una\h\h {\3c&H000000&\bord6}gran\h\h {\3c&H000000&\bord6}cama
+Dialogue: 0,0:00:10.80,0:00:10.96,S,,0,0,0,,{\3c&H000000&\bord6}Tiene\h\h {\3c&H000000&\bord6}una\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}gran\h\h {\3c&H000000&\bord6}cama
+Dialogue: 0,0:00:10.96,0:00:11.28,S,,0,0,0,,{\3c&H000000&\bord6}Tiene\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}gran\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}cama
+Dialogue: 0,0:00:11.28,0:00:11.44,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}gran\h\h {\3c&H000000&\bord6}armario.
+Dialogue: 0,0:00:11.44,0:00:11.52,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}gran\h\h {\3c&H000000&\bord6}armario.
+Dialogue: 0,0:00:11.52,0:00:11.68,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}gran\h\h {\3c&H000000&\bord6}armario.
+Dialogue: 0,0:00:11.68,0:00:12.24,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}gran\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}armario.
+Dialogue: 0,0:00:12.24,0:00:12.32,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}La\h\h {\3c&H000000&\bord6}decoración\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}más
+Dialogue: 0,0:00:12.32,0:00:12.80,S,,0,0,0,,{\3c&H000000&\bord6}La\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}decoración\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}más
+Dialogue: 0,0:00:12.80,0:00:12.88,S,,0,0,0,,{\3c&H000000&\bord6}La\h\h {\3c&H000000&\bord6}decoración\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}es\h\h {\3c&H000000&\bord6}más
+Dialogue: 0,0:00:12.88,0:00:13.12,S,,0,0,0,,{\3c&H000000&\bord6}La\h\h {\3c&H000000&\bord6}decoración\h\h {\3c&H000000&\bord6}es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}más
+Dialogue: 0,0:00:13.12,0:00:13.60,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}masculina\h\h {\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}colores\h\h {\3c&H000000&\bord6}neutros
+Dialogue: 0,0:00:13.60,0:00:13.76,S,,0,0,0,,{\3c&H000000&\bord6}masculina\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}con\h\h {\3c&H000000&\bord6}colores\h\h {\3c&H000000&\bord6}neutros
+Dialogue: 0,0:00:13.76,0:00:14.16,S,,0,0,0,,{\3c&H000000&\bord6}masculina\h\h {\3c&H000000&\bord6}con\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}colores\h\h {\3c&H000000&\bord6}neutros
+Dialogue: 0,0:00:14.16,0:00:14.56,S,,0,0,0,,{\3c&H000000&\bord6}masculina\h\h {\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}colores\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}neutros
+Dialogue: 0,0:00:14.56,0:00:14.64,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}negros\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}muebles
+Dialogue: 0,0:00:14.64,0:00:14.96,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}negros\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}muebles
+Dialogue: 0,0:00:14.96,0:00:15.12,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}negros\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}muebles
+Dialogue: 0,0:00:15.12,0:00:15.44,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}negros\h\h {\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}muebles
+Dialogue: 0,0:00:15.44,0:00:15.52,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}líneas\h\h {\3c&H000000&\bord6}limpias.
+Dialogue: 0,0:00:15.52,0:00:15.84,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}líneas\h\h {\3c&H000000&\bord6}limpias.
+Dialogue: 0,0:00:15.84,0:00:16.32,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}líneas\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}limpias.
+Dialogue: 0,0:00:16.32,0:00:16.56,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}nuestra\h\h {\3c&H000000&\bord6}habitación.
+Dialogue: 0,0:00:16.56,0:00:16.64,S,,0,0,0,,{\3c&H000000&\bord6}Esta\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}es\h\h {\3c&H000000&\bord6}nuestra\h\h {\3c&H000000&\bord6}habitación.
+Dialogue: 0,0:00:16.64,0:00:16.88,S,,0,0,0,,{\3c&H000000&\bord6}Esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}nuestra\h\h {\3c&H000000&\bord6}habitación.
+Dialogue: 0,0:00:16.88,0:00:17.36,S,,0,0,0,,{\3c&H000000&\bord6}Esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}nuestra\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}habitación.
+Dialogue: 0,0:00:17.36,0:00:17.68,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Tenemos\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}cama\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:17.68,0:00:17.84,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}una\h\h {\3c&H000000&\bord6}cama\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:17.84,0:00:18.08,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H000000&\bord6}una\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}cama\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:18.08,0:00:18.16,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}cama\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de
+Dialogue: 0,0:00:18.16,0:00:18.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}1,80,
+Dialogue: 0,0:00:18.72,0:00:18.88,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}armario\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}1,50.
+Dialogue: 0,0:00:18.88,0:00:19.20,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}armario\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}1,50.
+Dialogue: 0,0:00:19.20,0:00:19.28,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}armario\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}1,50.
+Dialogue: 0,0:00:19.28,0:00:19.84,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}armario\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}1,50.
+Dialogue: 0,0:00:19.84,0:00:20.08,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Y\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}compartimos\h\h {\3c&H000000&\bord6}tres.
+Dialogue: 0,0:00:20.08,0:00:20.16,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la\h\h {\3c&H000000&\bord6}compartimos\h\h {\3c&H000000&\bord6}tres.
+Dialogue: 0,0:00:20.16,0:00:20.64,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}la\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}compartimos\h\h {\3c&H000000&\bord6}tres.
+Dialogue: 0,0:00:20.64,0:00:20.96,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}compartimos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}tres.
+Dialogue: 0,0:00:20.96,0:00:21.04,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}No\h\h {\3c&H000000&\bord6}os\h\h {\3c&H000000&\bord6}asustéis\h\h {\3c&H000000&\bord6}que
+Dialogue: 0,0:00:21.04,0:00:21.20,S,,0,0,0,,{\3c&H000000&\bord6}No\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}os\h\h {\3c&H000000&\bord6}asustéis\h\h {\3c&H000000&\bord6}que
+Dialogue: 0,0:00:21.20,0:00:21.76,S,,0,0,0,,{\3c&H000000&\bord6}No\h\h {\3c&H000000&\bord6}os\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}asustéis\h\h {\3c&H000000&\bord6}que
+Dialogue: 0,0:00:21.76,0:00:21.84,S,,0,0,0,,{\3c&H000000&\bord6}No\h\h {\3c&H000000&\bord6}os\h\h {\3c&H000000&\bord6}asustéis\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}que
+Dialogue: 0,0:00:21.84,0:00:22.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}mi\h\h {\3c&H000000&\bord6}hijo\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}4
+Dialogue: 0,0:00:22.00,0:00:22.16,S,,0,0,0,,{\3c&H000000&\bord6}mi\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}hijo\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}4
+Dialogue: 0,0:00:22.16,0:00:22.24,S,,0,0,0,,{\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}hijo\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}4
+Dialogue: 0,0:00:22.24,0:00:22.40,S,,0,0,0,,{\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}hijo\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}4
+Dialogue: 0,0:00:22.40,0:00:22.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}años\h\h {\3c&H000000&\bord6}aún\h\h {\3c&H000000&\bord6}duerme\h\h {\3c&H000000&\bord6}con
+Dialogue: 0,0:00:22.72,0:00:22.96,S,,0,0,0,,{\3c&H000000&\bord6}años\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}aún\h\h {\3c&H000000&\bord6}duerme\h\h {\3c&H000000&\bord6}con
+Dialogue: 0,0:00:22.96,0:00:23.20,S,,0,0,0,,{\3c&H000000&\bord6}años\h\h {\3c&H000000&\bord6}aún\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}duerme\h\h {\3c&H000000&\bord6}con
+Dialogue: 0,0:00:23.20,0:00:23.28,S,,0,0,0,,{\3c&H000000&\bord6}años\h\h {\3c&H000000&\bord6}aún\h\h {\3c&H000000&\bord6}duerme\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}con
+Dialogue: 0,0:00:23.28,0:00:23.60,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}nosotros.
+Dialogue: 0,0:00:23.60,0:00:23.76,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Y\h\h {\3c&H000000&\bord6}esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}la
+Dialogue: 0,0:00:23.76,0:00:23.92,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}la
+Dialogue: 0,0:00:23.92,0:00:24.08,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}esta\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}es\h\h {\3c&H000000&\bord6}la
+Dialogue: 0,0:00:24.08,0:00:24.16,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la
+Dialogue: 0,0:00:24.16,0:00:24.40,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}tercera\h\h {\3c&H000000&\bord6}habitación.
+Dialogue: 0,0:00:24.40,0:00:24.96,S,,0,0,0,,{\3c&H000000&\bord6}tercera\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}habitación.
+Dialogue: 0,0:00:24.96,0:00:25.12,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Es\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}hija
+Dialogue: 0,0:00:25.12,0:00:25.28,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}hija
+Dialogue: 0,0:00:25.28,0:00:25.36,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}mi\h\h {\3c&H000000&\bord6}hija
+Dialogue: 0,0:00:25.36,0:00:25.60,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}hija
+Dialogue: 0,0:00:25.60,0:00:25.68,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}16\h\h {\3c&H000000&\bord6}años.
+Dialogue: 0,0:00:25.68,0:00:26.08,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}16\h\h {\3c&H000000&\bord6}años.
+Dialogue: 0,0:00:26.08,0:00:26.48,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}16\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}años.
+Dialogue: 0,0:00:26.48,0:00:26.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Tiene\h\h {\3c&H000000&\bord6}tres\h\h {\3c&H000000&\bord6}zonas\h\h {\3c&H000000&\bord6}bien
+Dialogue: 0,0:00:26.72,0:00:26.88,S,,0,0,0,,{\3c&H000000&\bord6}Tiene\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}tres\h\h {\3c&H000000&\bord6}zonas\h\h {\3c&H000000&\bord6}bien
+Dialogue: 0,0:00:26.88,0:00:27.12,S,,0,0,0,,{\3c&H000000&\bord6}Tiene\h\h {\3c&H000000&\bord6}tres\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}zonas\h\h {\3c&H000000&\bord6}bien
+Dialogue: 0,0:00:27.12,0:00:27.28,S,,0,0,0,,{\3c&H000000&\bord6}Tiene\h\h {\3c&H000000&\bord6}tres\h\h {\3c&H000000&\bord6}zonas\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}bien
+Dialogue: 0,0:00:27.28,0:00:28.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}delimitadas.
+Dialogue: 0,0:00:28.00,0:00:28.16,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}La\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}estudio,
+Dialogue: 0,0:00:28.16,0:00:28.40,S,,0,0,0,,{\3c&H000000&\bord6}La\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}zona\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}estudio,
+Dialogue: 0,0:00:28.40,0:00:28.56,S,,0,0,0,,{\3c&H000000&\bord6}La\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}estudio,
+Dialogue: 0,0:00:28.56,0:00:29.12,S,,0,0,0,,{\3c&H000000&\bord6}La\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}estudio,
+Dialogue: 0,0:00:29.12,0:00:29.20,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}la\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}descanso
+Dialogue: 0,0:00:29.20,0:00:29.52,S,,0,0,0,,{\3c&H000000&\bord6}la\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}zona\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}descanso
+Dialogue: 0,0:00:29.52,0:00:29.68,S,,0,0,0,,{\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}descanso
+Dialogue: 0,0:00:29.68,0:00:30.32,S,,0,0,0,,{\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}descanso
+Dialogue: 0,0:00:30.32,0:00:30.48,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:30.48,0:00:30.56,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:30.56,0:00:30.80,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}la\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}zona\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:30.80,0:00:30.96,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}zona\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de
+Dialogue: 0,0:00:30.96,0:00:31.60,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}ocio.
+Dialogue: 0,0:00:31.60,0:00:32.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Creamos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H000000&\bord6}con
+Dialogue: 0,0:00:32.00,0:00:32.16,S,,0,0,0,,{\3c&H000000&\bord6}Creamos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H000000&\bord6}con
+Dialogue: 0,0:00:32.16,0:00:32.48,S,,0,0,0,,{\3c&H000000&\bord6}Creamos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}espacio\h\h {\3c&H000000&\bord6}con
+Dialogue: 0,0:00:32.48,0:00:32.56,S,,0,0,0,,{\3c&H000000&\bord6}Creamos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}con
+Dialogue: 0,0:00:32.56,0:00:32.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}tocador,
+Dialogue: 0,0:00:32.72,0:00:33.28,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}tocador,
+Dialogue: 0,0:00:33.28,0:00:33.44,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}una\h\h {\3c&H000000&\bord6}butaca\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}enfrente
+Dialogue: 0,0:00:33.44,0:00:34.00,S,,0,0,0,,{\3c&H000000&\bord6}una\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}butaca\h\h {\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}enfrente
+Dialogue: 0,0:00:34.00,0:00:34.16,S,,0,0,0,,{\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}butaca\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}enfrente
+Dialogue: 0,0:00:34.16,0:00:34.56,S,,0,0,0,,{\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}butaca\h\h {\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}enfrente
+Dialogue: 0,0:00:34.56,0:00:34.64,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}espejo\h\h {\3c&H000000&\bord6}simulando\h\h {\3c&H000000&\bord6}un
+Dialogue: 0,0:00:34.64,0:00:35.04,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}espejo\h\h {\3c&H000000&\bord6}simulando\h\h {\3c&H000000&\bord6}un
+Dialogue: 0,0:00:35.04,0:00:35.52,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}espejo\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}simulando\h\h {\3c&H000000&\bord6}un
+Dialogue: 0,0:00:35.52,0:00:35.60,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}espejo\h\h {\3c&H000000&\bord6}simulando\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un
+Dialogue: 0,0:00:35.60,0:00:36.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}vestidor.
+Dialogue: 0,0:00:36.00,0:00:36.24,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Y\h\h {\3c&H000000&\bord6}ahora\h\h {\3c&H000000&\bord6}nos\h\h {\3c&H000000&\bord6}vamos
+Dialogue: 0,0:00:36.24,0:00:36.40,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}ahora\h\h {\3c&H000000&\bord6}nos\h\h {\3c&H000000&\bord6}vamos
+Dialogue: 0,0:00:36.40,0:00:36.56,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}ahora\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}nos\h\h {\3c&H000000&\bord6}vamos
+Dialogue: 0,0:00:36.56,0:00:36.80,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}ahora\h\h {\3c&H000000&\bord6}nos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}vamos
+Dialogue: 0,0:00:36.80,0:00:36.96,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}para\h\h {\3c&H000000&\bord6}el\h\h {\3c&H000000&\bord6}salón.
+Dialogue: 0,0:00:36.96,0:00:37.12,S,,0,0,0,,{\3c&H000000&\bord6}para\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}el\h\h {\3c&H000000&\bord6}salón.
+Dialogue: 0,0:00:37.12,0:00:37.60,S,,0,0,0,,{\3c&H000000&\bord6}para\h\h {\3c&H000000&\bord6}el\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}salón.
+Dialogue: 0,0:00:37.60,0:00:37.76,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Es\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H000000&\bord6}favorito
+Dialogue: 0,0:00:37.76,0:00:37.92,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}mi\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H000000&\bord6}favorito
+Dialogue: 0,0:00:37.92,0:00:38.24,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}espacio\h\h {\3c&H000000&\bord6}favorito
+Dialogue: 0,0:00:38.24,0:00:38.64,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}mi\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}favorito
+Dialogue: 0,0:00:38.64,0:00:38.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}casa.
+Dialogue: 0,0:00:38.72,0:00:38.80,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la\h\h {\3c&H000000&\bord6}casa.
+Dialogue: 0,0:00:38.80,0:00:39.20,S,,0,0,0,,{\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}la\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}casa.
+Dialogue: 0,0:00:39.20,0:00:39.52,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Tenemos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}sofá\h\h {\3c&H000000&\bord6}blanco
+Dialogue: 0,0:00:39.52,0:00:39.68,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}sofá\h\h {\3c&H000000&\bord6}blanco
+Dialogue: 0,0:00:39.68,0:00:40.00,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}sofá\h\h {\3c&H000000&\bord6}blanco
+Dialogue: 0,0:00:40.00,0:00:40.32,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}sofá\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}blanco
+Dialogue: 0,0:00:40.32,0:00:40.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}precioso\h\h {\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}muchos\h\h {\3c&H000000&\bord6}cojines,
+Dialogue: 0,0:00:40.72,0:00:40.80,S,,0,0,0,,{\3c&H000000&\bord6}precioso\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}con\h\h {\3c&H000000&\bord6}muchos\h\h {\3c&H000000&\bord6}cojines,
+Dialogue: 0,0:00:40.80,0:00:41.04,S,,0,0,0,,{\3c&H000000&\bord6}precioso\h\h {\3c&H000000&\bord6}con\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}muchos\h\h {\3c&H000000&\bord6}cojines,
+Dialogue: 0,0:00:41.04,0:00:41.68,S,,0,0,0,,{\3c&H000000&\bord6}precioso\h\h {\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}muchos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}cojines,
+Dialogue: 0,0:00:41.68,0:00:41.84,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}sillón\h\h {\3c&H000000&\bord6}giratorio\h\h {\3c&H000000&\bord6}y
+Dialogue: 0,0:00:41.84,0:00:42.32,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}sillón\h\h {\3c&H000000&\bord6}giratorio\h\h {\3c&H000000&\bord6}y
+Dialogue: 0,0:00:42.32,0:00:42.88,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}sillón\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}giratorio\h\h {\3c&H000000&\bord6}y
+Dialogue: 0,0:00:42.88,0:00:43.04,S,,0,0,0,,{\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}sillón\h\h {\3c&H000000&\bord6}giratorio\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}y
+Dialogue: 0,0:00:43.04,0:00:43.36,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}muebles\h\h {\3c&H000000&\bord6}de\h\h {\3c&H000000&\bord6}madera.
+Dialogue: 0,0:00:43.36,0:00:43.44,S,,0,0,0,,{\3c&H000000&\bord6}muebles\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de\h\h {\3c&H000000&\bord6}madera.
+Dialogue: 0,0:00:43.44,0:00:43.84,S,,0,0,0,,{\3c&H000000&\bord6}muebles\h\h {\3c&H000000&\bord6}de\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}madera.
+Dialogue: 0,0:00:43.84,0:00:44.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}No\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H000000&\bord6}entrada,
+Dialogue: 0,0:00:44.00,0:00:44.40,S,,0,0,0,,{\3c&H000000&\bord6}No\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}tenemos\h\h {\3c&H000000&\bord6}entrada,
+Dialogue: 0,0:00:44.40,0:00:44.72,S,,0,0,0,,{\3c&H000000&\bord6}No\h\h {\3c&H000000&\bord6}tenemos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}entrada,
+Dialogue: 0,0:00:44.72,0:00:44.88,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}pero\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}he\h\h {\3c&H000000&\bord6}creado
+Dialogue: 0,0:00:44.88,0:00:45.04,S,,0,0,0,,{\3c&H000000&\bord6}pero\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la\h\h {\3c&H000000&\bord6}he\h\h {\3c&H000000&\bord6}creado
+Dialogue: 0,0:00:45.04,0:00:45.20,S,,0,0,0,,{\3c&H000000&\bord6}pero\h\h {\3c&H000000&\bord6}la\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}he\h\h {\3c&H000000&\bord6}creado
+Dialogue: 0,0:00:45.20,0:00:45.52,S,,0,0,0,,{\3c&H000000&\bord6}pero\h\h {\3c&H000000&\bord6}la\h\h {\3c&H000000&\bord6}he\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}creado
+Dialogue: 0,0:00:45.52,0:00:45.68,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}con\h\h {\3c&H000000&\bord6}este\h\h {\3c&H000000&\bord6}separador\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:45.68,0:00:45.84,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}este\h\h {\3c&H000000&\bord6}separador\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:45.84,0:00:46.40,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}este\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}separador\h\h {\3c&H000000&\bord6}de
+Dialogue: 0,0:00:46.40,0:00:46.48,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}este\h\h {\3c&H000000&\bord6}separador\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}de
+Dialogue: 0,0:00:46.48,0:00:46.96,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}ambiente.
+Dialogue: 0,0:00:46.96,0:00:47.12,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Y\h\h {\3c&H000000&\bord6}esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}la
+Dialogue: 0,0:00:47.12,0:00:47.36,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H000000&\bord6}la
+Dialogue: 0,0:00:47.36,0:00:47.52,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}esta\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}es\h\h {\3c&H000000&\bord6}la
+Dialogue: 0,0:00:47.52,0:00:47.60,S,,0,0,0,,{\3c&H000000&\bord6}Y\h\h {\3c&H000000&\bord6}esta\h\h {\3c&H000000&\bord6}es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}la
+Dialogue: 0,0:00:47.60,0:00:48.16,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}cocina.
+Dialogue: 0,0:00:48.16,0:00:48.32,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Es\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H000000&\bord6}luminoso
+Dialogue: 0,0:00:48.32,0:00:48.40,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H000000&\bord6}luminoso
+Dialogue: 0,0:00:48.40,0:00:48.72,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}un\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}espacio\h\h {\3c&H000000&\bord6}luminoso
+Dialogue: 0,0:00:48.72,0:00:49.20,S,,0,0,0,,{\3c&H000000&\bord6}Es\h\h {\3c&H000000&\bord6}un\h\h {\3c&H000000&\bord6}espacio\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}luminoso
+Dialogue: 0,0:00:49.20,0:00:49.28,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}con\h\h {\3c&H000000&\bord6}mucho\h\h {\3c&H000000&\bord6}almacenamiento\h\h {\3c&H000000&\bord6}y
+Dialogue: 0,0:00:49.28,0:00:49.52,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}mucho\h\h {\3c&H000000&\bord6}almacenamiento\h\h {\3c&H000000&\bord6}y
+Dialogue: 0,0:00:49.52,0:00:50.16,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}mucho\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}almacenamiento\h\h {\3c&H000000&\bord6}y
+Dialogue: 0,0:00:50.16,0:00:50.40,S,,0,0,0,,{\3c&H000000&\bord6}con\h\h {\3c&H000000&\bord6}mucho\h\h {\3c&H000000&\bord6}almacenamiento\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}y
+Dialogue: 0,0:00:50.40,0:00:51.20,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}electrodomésticos\h\h {\3c&H000000&\bord6}en\h\h {\3c&H000000&\bord6}cristal\h\h {\3c&H000000&\bord6}blanco
+Dialogue: 0,0:00:51.20,0:00:51.28,S,,0,0,0,,{\3c&H000000&\bord6}electrodomésticos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}en\h\h {\3c&H000000&\bord6}cristal\h\h {\3c&H000000&\bord6}blanco
+Dialogue: 0,0:00:51.28,0:00:51.60,S,,0,0,0,,{\3c&H000000&\bord6}electrodomésticos\h\h {\3c&H000000&\bord6}en\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}cristal\h\h {\3c&H000000&\bord6}blanco
+Dialogue: 0,0:00:51.60,0:00:51.92,S,,0,0,0,,{\3c&H000000&\bord6}electrodomésticos\h\h {\3c&H000000&\bord6}en\h\h {\3c&H000000&\bord6}cristal\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}blanco
+Dialogue: 0,0:00:51.92,0:00:52.00,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}que\h\h {\3c&H000000&\bord6}le\h\h {\3c&H000000&\bord6}dan\h\h {\3c&H000000&\bord6}un
+Dialogue: 0,0:00:52.00,0:00:52.16,S,,0,0,0,,{\3c&H000000&\bord6}que\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}le\h\h {\3c&H000000&\bord6}dan\h\h {\3c&H000000&\bord6}un
+Dialogue: 0,0:00:52.16,0:00:52.32,S,,0,0,0,,{\3c&H000000&\bord6}que\h\h {\3c&H000000&\bord6}le\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}dan\h\h {\3c&H000000&\bord6}un
+Dialogue: 0,0:00:52.32,0:00:52.48,S,,0,0,0,,{\3c&H000000&\bord6}que\h\h {\3c&H000000&\bord6}le\h\h {\3c&H000000&\bord6}dan\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}un
+Dialogue: 0,0:00:52.48,0:00:52.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}toque\h\h {\3c&H000000&\bord6}muy\h\h {\3c&H000000&\bord6}moderno.
+Dialogue: 0,0:00:52.72,0:00:52.88,S,,0,0,0,,{\3c&H000000&\bord6}toque\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}muy\h\h {\3c&H000000&\bord6}moderno.
+Dialogue: 0,0:00:52.88,0:00:53.28,S,,0,0,0,,{\3c&H000000&\bord6}toque\h\h {\3c&H000000&\bord6}muy\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}moderno.
+Dialogue: 0,0:00:53.28,0:00:53.60,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Tenemos\h\h {\3c&H000000&\bord6}nuestro\h\h {\3c&H000000&\bord6}coffee\h\h {\3c&H000000&\bord6}corner
+Dialogue: 0,0:00:53.60,0:00:53.76,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}nuestro\h\h {\3c&H000000&\bord6}coffee\h\h {\3c&H000000&\bord6}corner
+Dialogue: 0,0:00:53.76,0:00:54.24,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H000000&\bord6}nuestro\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}coffee\h\h {\3c&H000000&\bord6}corner
+Dialogue: 0,0:00:54.24,0:00:54.64,S,,0,0,0,,{\3c&H000000&\bord6}Tenemos\h\h {\3c&H000000&\bord6}nuestro\h\h {\3c&H000000&\bord6}coffee\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}corner
+Dialogue: 0,0:00:54.64,0:00:54.72,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}y\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}mesa\h\h {\3c&H000000&\bord6}extensible.
+Dialogue: 0,0:00:54.72,0:00:54.88,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}una\h\h {\3c&H000000&\bord6}mesa\h\h {\3c&H000000&\bord6}extensible.
+Dialogue: 0,0:00:54.88,0:00:55.12,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}una\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}mesa\h\h {\3c&H000000&\bord6}extensible.
+Dialogue: 0,0:00:55.12,0:00:55.84,S,,0,0,0,,{\3c&H000000&\bord6}y\h\h {\3c&H000000&\bord6}una\h\h {\3c&H000000&\bord6}mesa\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}extensible.
+Dialogue: 0,0:00:55.84,0:00:56.08,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}Una\h\h {\3c&H000000&\bord6}casa\h\h {\3c&H000000&\bord6}pequeña\h\h {\3c&H000000&\bord6}pero
+Dialogue: 0,0:00:56.08,0:00:56.32,S,,0,0,0,,{\3c&H000000&\bord6}Una\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}casa\h\h {\3c&H000000&\bord6}pequeña\h\h {\3c&H000000&\bord6}pero
+Dialogue: 0,0:00:56.32,0:00:56.72,S,,0,0,0,,{\3c&H000000&\bord6}Una\h\h {\3c&H000000&\bord6}casa\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}pequeña\h\h {\3c&H000000&\bord6}pero
+Dialogue: 0,0:00:56.72,0:00:56.88,S,,0,0,0,,{\3c&H000000&\bord6}Una\h\h {\3c&H000000&\bord6}casa\h\h {\3c&H000000&\bord6}pequeña\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}pero
+Dialogue: 0,0:00:56.88,0:00:57.12,S,,0,0,0,,{\3c&H3FD94A&\bord22\c&HFFFFFF&}bien\h\h {\3c&H000000&\bord6}aprovechada.
+Dialogue: 0,0:00:57.12,0:00:58.60,S,,0,0,0,,{\3c&H000000&\bord6}bien\h\h {\3c&H3FD94A&\bord22\c&HFFFFFF&}aprovechada.
