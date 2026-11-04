@@ -59,3 +59,16 @@ python3 scripts/viral_captions.py "mi video.mp4" -o salida --styles neon --bg vi
 ```
 
 Ejemplos en `prueba captions/virales/`.
+
+## Edición completa
+
+`scripts/full_edit.py` edita el video de principio a fin: color y nitidez, zoom de entrada y
+acercamientos en las palabras especiales, captions (por defecto `popsticker`), audio limpio y
+normalizado a -14 LUFS con "whoosh" y "pop" en cada palabra especial, y un cierre con llamado a la
+acción (`--cta ""` lo quita).
+
+```bash
+python3 scripts/full_edit.py "mi video.mp4" -o "editado/mi video.mp4" --words salida/mi_video_words.json
+```
+
+Ejemplo en `prueba captions/editado/`.
