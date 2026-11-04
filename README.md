@@ -37,15 +37,16 @@ Pensado para videos cortos (hasta unos minutos).
 
 Ejemplos con los videos de prueba en `prueba captions/previews/`.
 
-## 20 estilos virales
+## 21 estilos virales
 
-`scripts/viral_captions.py` agrega 20 estilos, cada uno con su tipografía y animación
+`scripts/viral_captions.py` agrega 21 estilos, cada uno con su tipografía y animación
 (neón, editorial y tráiler combinan dos fuentes): `hormozi`, `beast`, `karaoke`, `neon`,
 `typewriter`, `arcade`, `glitch`, `marker`, `editorial`, `retro`, `sticker`, `trailer`, `pop3d`,
-`twotone`, `hollow`, `rainbow`, `sport`, `bubble`, `blurin`, `graffiti`.
+`twotone`, `hollow`, `rainbow`, `sport`, `bubble`, `blurin`, `graffiti` y `pill`
+(píldora de color que pasa por cada palabra).
 
 ```bash
-# Reel que pasa por los 20 estilos (fondo negro) y mosaico con los 20 a la vez
+# Reel que pasa por todos los estilos (fondo negro) y mosaico con todos a la vez
 python3 scripts/viral_captions.py "mi video.mp4" -o salida --reel --grid
 
 # Un video por estilo sobre fondo negro, con su nombre y tipografía arriba

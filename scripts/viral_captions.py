@@ -11,6 +11,7 @@ escribe NOMBRE_ESTILO.ass por estilo. Además:
   --grid            GRID_NOMBRE.mp4: mosaico con todos los estilos a la vez
 """
 import argparse
+import functools
 import os
 import re
 import subprocess
@@ -109,6 +110,9 @@ VIRAL = {
                   on=r"\c&HFFFFFF&", off=rf"\c{c('#A3E635')}",
                   intro=r"\frz-6\fscx130\fscy130\t(0,140,\frz0\fscx100\fscy100)",
                   layers=[dict(p=rf"\c{c('#D946EF')}\3c{c('#D946EF')}\bord16\blur10")]),
+    "pill": S("Píldora", "Kanit-ExtraBold.ttf", 110, 3, case="upper", mode="pill", bord=5, shad=3,
+              pills=[("#FF2E63", "#FFFFFF"), ("#FFD60A", "#111111"), ("#00C853", "#FFFFFF"),
+                     ("#2F6BFF", "#FFFFFF"), ("#A64DFF", "#FFFFFF")]),
 }
 
 _FONTS = {}
@@ -180,7 +184,9 @@ def events(words, v, resx, y=1150):
         fs, fs2 = round(v["size"] * k), round(v.get("size2", v["size"]) * k)
         base = rf"\an5\fs{fs}" + v.get("line", "")
         mode = v.get("mode")
-        if mode in ("karaoke", "type"):
+        if mode == "pill":
+            out += pill_events(v, g, wi, case, x, y, resx, gend)
+        elif mode in ("karaoke", "type"):
             head = "{" + fill(base + rf"\pos({x},{y})" + v.get("intro", ""), gi, 0, fs, fs2) + "}"
             if mode == "karaoke":  # el color barre cada palabra mientras se dice
                 durs = [(g[i + 1]["s"] if i + 1 < len(g) else w["e"]) - w["s"] for i, w in enumerate(g)]
@@ -211,6 +217,57 @@ def events(words, v, resx, y=1150):
                                     + case(wd["w"]) for j, wd in enumerate(g))
                     out.append((li, s, e, "{" + fill(tags, gi, 0, fs, fs2) + "}" + body))
         wi += len(g)
+    return out
+
+
+@functools.lru_cache(maxsize=None)
+def vmetrics(file):
+    """(ascendente, altura de mayúsculas) en unidades de la fuente, como las usa libass."""
+    from fontTools.ttLib import TTFont
+    os2 = TTFont(os.path.join(FONTS, file), lazy=True)["OS/2"]
+    return os2.usWinAscent, getattr(os2, "sCapHeight", 0) or round(os2.usWinAscent * 0.7)
+
+
+def pill_path(w, h):
+    """Rectángulo de puntas redondas (píldora) como dibujo ASS."""
+    w, r = max(w, h), h / 2
+    k = r * 0.552
+
+    def n(*p):
+        return " ".join(f"{q:.0f}" for q in p)
+    return (f"m {n(r, 0)} l {n(w - r, 0)} b {n(w - r + k, 0, w, r - k, w, r)} b {n(w, r + k, w - r + k, h, w - r, h)} "
+            f"l {n(r, h)} b {n(r - k, h, 0, r + k, 0, r)} b {n(0, r - k, r - k, 0, r, 0)}")
+
+
+def pill_events(v, g, wi, case, x, y, resx, gend):
+    """Píldora de color debajo de la palabra que se dice; se desliza de palabra en palabra."""
+    unit = font(v["font"])[3]
+    words = [case(w["w"]) for w in g]
+    space, w1 = text_width(v["font"], "  ", 1), [text_width(v["font"], t, 1) for t in words]
+    fs = round(min(v["size"], (resx - 160) / (sum(w1) + space * (len(words) - 1))))  # el bloque cabe en una línea
+    ws, sp = [t * fs for t in w1], space * fs
+    cx, left = [], x - (sum(ws) + sp * (len(ws) - 1)) / 2
+    for t in ws:
+        cx.append(left + t / 2)
+        left += t + sp
+    asc, cap = (m * fs / unit for m in vmetrics(v["font"]))
+    cy, ph, padx = y - fs / 2 + asc - cap / 2, cap * 1.7, cap * 0.4
+    pills, out = v["pills"], []
+    for i, w in enumerate(g):
+        s, e = w["s"], (g[i + 1]["s"] if i + 1 < len(g) else gend)
+        bg, fg = pills[(wi + i) % len(pills)]
+        pw = ws[i] + 2 * padx
+        if i == 0:  # aparece con un pequeño rebote
+            anim = rf"\pos({cx[0]:.1f},{cy:.1f})\1c{c(bg)}\fscx40\fscy40\t(0,110,\fscx100\fscy100)"
+        else:  # se desliza desde la palabra anterior cambiando de ancho y de color
+            prev = pills[(wi + i - 1) % len(pills)][0]
+            anim = (rf"\move({cx[i - 1]:.1f},{cy:.1f},{cx[i]:.1f},{cy:.1f},0,120)\1c{c(prev)}\t(0,120,\1c{c(bg)})"
+                    rf"\fscx{(ws[i - 1] + 2 * padx) / pw * 100:.0f}\t(0,120,\fscx100)")
+        out.append((0, s, e, r"{\an5\bord0\shad0\blur0.6" + anim + r"\p1}" + pill_path(pw, ph)))
+        body = r" \h".join(("{" + rf"\bord0\shad0\c&HFFFFFF&\t(0,120,\c{c(fg)})" + "}" if j == i else
+                         "{" + rf"\bord{v.get('bord', 6)}\shad{v.get('shad', 0)}\c&HFFFFFF&" + "}") + t
+                        for j, t in enumerate(words))
+        out.append((1, s, e, "{" + rf"\an5\pos({x},{y})\fs{fs}" + (r"\fad(80,0)" if i == 0 else "") + "}" + body))
     return out
 
 
