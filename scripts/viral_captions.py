@@ -115,7 +115,9 @@ VIRAL = {
     "pill": S("Píldora", "Kanit-ExtraBold.ttf", 110, 3, case="upper", mode="pill", bord=5, shad=3,
               pills=[("#FF2E63", "#FFFFFF"), ("#FFD60A", "#111111"), ("#00C853", "#FFFFFF"),
                      ("#2F6BFF", "#FFFFFF"), ("#A64DFF", "#FFFFFF")]),
-    "popsticker": S("Pop Sticker", "Montserrat-Black.ttf", 118, 2, case="upper", mode="pop",
+    "popsticker": S("Pop Sticker", "Montserrat-Black.ttf", 118, 2, case="upper", mode="mix", bord=6, shad=3,
+                    normal=S("Normal", "Montserrat-Black.ttf", 72, 3, bord=6, shad=3,
+                             on=rf"\c{c('#C8FF00')}", off=r"\c&HFFFFFF&"),
                     font2="Silkscreen-Bold.ttf", decos=["sparkle", "dots", "xmark", "smiley", "squares", "burst"],
                     combos=[[("blue", "white", "torn"), ("lime", "black", "torn")],
                             [("black", "white", "pixel"), ("pink", "black", "torn")],
@@ -123,7 +125,9 @@ VIRAL = {
                             [("white", "black", "round"), ("cyan", "white", "torn")],
                             [("pink", "white", "torn"), ("black", "white", "torn")],
                             [("lime", "black", "torn"), ("blue", "white", "round")]]),
-    "popblock": S("Pop Block", "Anton-Regular.ttf", 150, 2, case="upper", mode="pop", slant=True,
+    "popblock": S("Pop Block", "Anton-Regular.ttf", 150, 2, case="upper", mode="mix", slant=True, bord=6, shad=3,
+                  normal=S("Normal", "Anton-Regular.ttf", 100, 3, case="upper", bord=6, shad=3,
+                           on=rf"\c{c('#2EE6D6')}", off=r"\c&HFFFFFF&"),
                   decos=["burst", "smiley", "sparkle", "barcode", "circle", "squares"],
                   combos=[[("cyan", "black", "torn"), ("pink", "white", "torn")],
                           [("black", "white", "torn"), ("pink", "black", "torn")],
@@ -180,6 +184,8 @@ def state(v, j, i):
 
 def events(words, v, resx, y=1150):
     """Lista de (capa, inicio, fin, texto) de un estilo."""
+    if v.get("mode") == "mix":
+        return mix_events(words, v, resx)
     x, out, wi = resx // 2, [], 0
     case = {"upper": str.upper, "lower": str.lower}.get(v.get("case"), str)
     f1 = font(v["font"])[0]
@@ -423,6 +429,57 @@ def pop_events(v, g, gi, case, x, y, resx, gend):
             out.append((3, s, gend, "{" + rf"\an5\pos({px:.0f},{py:.0f})\1c{c(PAL[rnd.choice(DECO_COLS[kind])])}"
                         rf"\bord0\shad0\frz{r0:.0f}\fscx0\fscy0\t(0,160,\fscx120\fscy120)\t(160,240,\fscx100\fscy100)"
                         rf"{spin}" + (rf"\t({d - 80},{d},\fscx0\fscy0)" if d >= 450 else "") + r"\p1}" + deco_path(kind, rnd)))
+    return out
+
+
+EMPHASIS = set("""gran grande grandes mejor mejores nuevo nueva nuevos nuevas gratis especial especiales increíble
+increíbles único única únicos únicas oferta ofertas descuento descuentos hoy ahora nunca siempre todo todos súper
+super top fácil rápido secreto favorito favorita precioso preciosa perfecto perfecta moderno moderna enorme brutal
+wow ganar premio exclusivo exclusiva limitado último última primero primera más importante urgente encanta""".split())
+
+
+def pick_specials(words, gap=2.5):
+    """Palabras especiales: de énfasis, números y nombres propios, separadas al menos `gap` segundos.
+    En el _words.json, "pop": true obliga a usar una palabra y "pop": false la descarta."""
+    def special(i):
+        w, t = words[i], re.sub(r"[^\w]", "", words[i]["w"].lower())
+        if "pop" in w:
+            return 2 if w["pop"] else 0
+        starts_sentence = i == 0 or re.search(r"[.!?]$", words[i - 1]["w"])
+        return int(any(ch.isdigit() for ch in t) or t in EMPHASIS or (w["w"][:1].isupper() and not starts_sentence))
+
+    chosen = []
+    for i in range(len(words)):
+        sc = special(i)
+        if not sc:
+            continue
+        if chosen and chosen[-1][-1] == i - 1 and len(chosen[-1]) < 2 and not re.search(r"[.,!?]$", words[i - 1]["w"]):
+            chosen[-1].append(i)  # frase de 2 palabras: "Puerto Rico", "más grande"
+        elif sc == 2 or not chosen or words[i]["s"] - words[chosen[-1][-1]]["s"] >= gap:
+            chosen.append([i])
+    return chosen
+
+
+def mix_events(words, v, resx):
+    """Captions normales abajo; las palabras especiales salen como título pop en el centro."""
+    case = {"upper": str.upper, "lower": str.lower}.get(v.get("case"), str)
+    specials, out = pick_specials(words, v.get("gap", 2.5)), []
+    sp = {i for grp in specials for i in grp}
+    for gi, grp in enumerate(specials):  # el título se queda un momento aunque sigan las captions normales
+        g = [words[i] for i in grp]
+        end = max(g[-1]["e"] + 0.6, g[0]["s"] + 1.1)
+        if gi + 1 < len(specials):
+            end = min(end, words[specials[gi + 1][0]]["s"] - 0.05)
+        out += pop_events(v, g, gi, case, resx // 2, v.get("y_pop", 900), resx, end)
+    run = []
+    for i, w in enumerate(words + [None]):
+        if w is not None and i not in sp:
+            run.append(w)
+        elif run:  # las captions normales se cortan cuando entra una palabra especial
+            cut = w["s"] if w is not None else float("inf")
+            out += [(la, s, min(e, cut), t) for la, s, e, t in events(run, v["normal"], resx, v.get("y_norm", 1350))
+                    if s < cut]
+            run = []
     return out
 
 

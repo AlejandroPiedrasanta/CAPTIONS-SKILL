@@ -43,8 +43,9 @@ Ejemplos con los videos de prueba en `prueba captions/previews/`.
 (neón, editorial y tráiler combinan dos fuentes): `hormozi`, `beast`, `karaoke`, `neon`,
 `typewriter`, `arcade`, `glitch`, `marker`, `editorial`, `retro`, `sticker`, `trailer`, `pop3d`,
 `twotone`, `hollow`, `rainbow`, `sport`, `bubble`, `blurin`, `graffiti`, `pill`
-(píldora de color que pasa por cada palabra), `popsticker` y `popblock` (títulos pop:
-cada palabra en un bloque de color inclinado, con decoraciones).
+(píldora de color que pasa por cada palabra), `popsticker` y `popblock` (captions normales y,
+para las palabras especiales, un título pop en bloques de color con decoraciones). Las
+especiales se eligen solas; en el `_words.json` usa `"pop": true` o `"pop": false` para cambiarlas.
 
 ```bash
 # Reel que pasa por todos los estilos (fondo negro) y mosaico con todos a la vez
