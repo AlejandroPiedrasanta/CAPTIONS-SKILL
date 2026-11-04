@@ -1,0 +1,4 @@
+# Se descargan con scripts/setup.sh
+models/
+fonts/
+__pycache__/
