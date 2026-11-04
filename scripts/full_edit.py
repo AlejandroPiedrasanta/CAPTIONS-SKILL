@@ -110,7 +110,7 @@ def main():
         fc = (f"[0:v]scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,"
               f"eq=contrast=1.06:saturation=1.12:brightness=0.005,scale=2160:3840:flags=lanczos,"
               f"zoompan=z='1+{z}':d=1:x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':s=1080x1920:fps={fps},"
-              f"unsharp=5:5:0.45,tpad=stop_mode=clone:stop_duration={TAIL},"
+              f"setpts=N/FRAME_RATE/TB,unsharp=5:5:0.45,tpad=stop_mode=clone:stop_duration={TAIL},"
               f"drawbox=c=black@0.45:t=fill:enable='gte(t,{dur:.2f})',"
               f"ass={esc('captions.ass')}:fontsdir={esc(os.path.relpath(FONTS, work))},format=yuv420p[v];"
               f"[0:a]highpass=f=60,acompressor=threshold=-18dB:ratio=2.5:attack=10:release=200,"
