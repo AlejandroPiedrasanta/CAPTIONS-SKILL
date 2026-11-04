@@ -48,6 +48,9 @@ Ejemplos con los videos de prueba en `prueba captions/previews/`.
 # Reel que pasa por los 20 estilos (fondo negro) y mosaico con los 20 a la vez
 python3 scripts/viral_captions.py "mi video.mp4" -o salida --reel --grid
 
+# Un video por estilo sobre fondo negro, con su nombre y tipografía arriba
+python3 scripts/viral_captions.py "mi video.mp4" -o salida --bg black --label
+
 # Video final con un estilo sobre el video original
 python3 scripts/viral_captions.py "mi video.mp4" -o salida --styles neon --bg video
 ```

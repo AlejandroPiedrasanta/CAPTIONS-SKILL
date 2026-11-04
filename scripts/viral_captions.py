@@ -224,16 +224,25 @@ def reel_doc(words, keys, resx, dur):
         cand = [t for t in cuts if lo <= t <= hi]
         bounds.append(min(cand, key=lambda t: abs(t - n * step)) if cand else max(lo, min(n * step, hi)))
     bounds.append(dur)
-    styles = [f"Style: L,{font(LABEL_FONT)[0]},50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,"
-              "0,0,0,0,100,100,2,0,1,0,0,8,40,40,140,1"]
-    evs = []
+    styles, evs = [label_style()], []
     for n, key in enumerate(keys):
         v, sn, b0, b1 = VIRAL[key], f"V{n}", bounds[n], bounds[n + 1]
         styles.append(style_line(v, sn))
         evs += [dialogue(la, s, min(e, b1), sn, t) for la, s, e, t in events(words, v, resx) if b0 <= s < b1]
-        names = " + ".join(re.sub(r" Regular$", "", font(f)[0]) for f in (v["font"], v.get("font2")) if f)
-        evs.append(dialogue(9, b0, b1, "L", f"{n + 1:02d} · {v['name'].upper()}\\N{{\\fs32\\alpha&H60&}}{names}"))
+        evs.append(dialogue(9, b0, b1, "L", label_text(key)))
     return ass_doc(resx, styles, evs)
+
+
+def label_style():
+    return (f"Style: L,{font(LABEL_FONT)[0]},50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,"
+            "0,0,0,0,100,100,2,0,1,0,0,8,40,40,140,1")
+
+
+def label_text(key):
+    """Número, nombre y tipografías del estilo, para las previews."""
+    v = VIRAL[key]
+    names = " + ".join(re.sub(r" Regular$", "", font(f)[0]) for f in (v["font"], v.get("font2")) if f)
+    return f"{list(VIRAL).index(key) + 1:02d} · {v['name'].upper()}\\N{{\\fs32\\alpha&H60&}}{names}"
 
 
 def grid(video, keys, name, out, dur, w, h, cols=4):
@@ -264,6 +273,7 @@ def main():
                     help="renderiza cada estilo: black = fondo negro, video = sobre el video original")
     ap.add_argument("--reel", action="store_true", help="un video que pasa por todos los estilos")
     ap.add_argument("--grid", action="store_true", help="mosaico con todos los estilos a la vez")
+    ap.add_argument("--label", action="store_true", help="muestra arriba el nombre y la tipografía del estilo")
     a = ap.parse_args()
 
     keys = [s.strip() for s in a.styles.split(",") if s.strip()]
@@ -278,9 +288,13 @@ def main():
 
     for k in keys:
         ass = os.path.join(out, f"{name}_{k}.ass")
+        styles = [style_line(VIRAL[k], "S")]
         evs = [dialogue(la, s, e, "S", t) for la, s, e, t in events(words, VIRAL[k], resx)]
+        if a.label:
+            styles.append(label_style())
+            evs.append(dialogue(9, 0, dur, "L", label_text(k)))
         with open(ass, "w", encoding="utf-8") as f:
-            f.write(ass_doc(resx, [style_line(VIRAL[k], "S")], evs))
+            f.write(ass_doc(resx, styles, evs))
         if a.bg != "none":
             mp4 = os.path.join(out, f"{name}_{k}{'_final' if a.bg == 'video' else ''}.mp4")
             render(video, ass, mp4, w, h, dur, a.bg, out)
