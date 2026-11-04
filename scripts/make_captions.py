@@ -112,6 +112,20 @@ def save_words(path, words):
         f.write("[\n" + ",\n".join(json.dumps(w, ensure_ascii=False) for w in words) + "\n]\n")
 
 
+def load_words(video, out, name):
+    """Lee NOMBRE_words.json o, si no existe, transcribe el video y lo crea."""
+    wj = os.path.join(out, f"{name}_words.json")
+    if os.path.exists(wj):
+        with open(wj, encoding="utf-8") as f:
+            words = json.load(f)
+        print(f"Usando {wj} (bórralo para transcribir de nuevo)")
+    else:
+        words = transcribe(video)
+        save_words(wj, words)
+        print("Transcripción:", " ".join(x["w"] for x in words))
+    return words
+
+
 def groups(words, n):
     """Bloques de hasta n palabras; se corta en pausas largas y en signos de puntuación."""
     out, cur = [], []
@@ -192,15 +206,7 @@ def main():
     name = a.name or re.sub(r"[^\w-]", "_", os.path.splitext(os.path.basename(video))[0])
     w, h, dur = probe(video)
 
-    wj = os.path.join(out, f"{name}_words.json")
-    if os.path.exists(wj):
-        with open(wj, encoding="utf-8") as f:
-            words = json.load(f)
-        print(f"Usando {wj} (bórralo para transcribir de nuevo)")
-    else:
-        words = transcribe(video)
-        save_words(wj, words)
-        print("Transcripción:", " ".join(x["w"] for x in words))
+    words = load_words(video, out, name)
 
     resx, suffix, mp4s = round(1920 * w / h), ("_final" if a.bg == "video" else ""), []
     for st in styles:
