@@ -38,6 +38,7 @@ PaytoneOne-Regular.ttf $G/ofl/paytoneone/PaytoneOne-Regular.ttf
 Michroma-Regular.ttf $G/ofl/michroma/Michroma-Regular.ttf
 SedgwickAveDisplay-Regular.ttf $G/ofl/sedgwickavedisplay/SedgwickAveDisplay-Regular.ttf
 Kanit-ExtraBold.ttf $G/ofl/kanit/Kanit-ExtraBold.ttf
+Silkscreen-Bold.ttf $G/ofl/silkscreen/Silkscreen-Bold.ttf
 EOF
 if [ ! -f fonts/InterDisplay-Black.ttf ]; then
   T=$(mktemp -d)

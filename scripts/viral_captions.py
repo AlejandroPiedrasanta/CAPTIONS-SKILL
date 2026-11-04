@@ -12,7 +12,9 @@ escribe NOMBRE_ESTILO.ass por estilo. Además:
 """
 import argparse
 import functools
+import math
 import os
+import random
 import re
 import subprocess
 import sys
@@ -113,6 +115,23 @@ VIRAL = {
     "pill": S("Píldora", "Kanit-ExtraBold.ttf", 110, 3, case="upper", mode="pill", bord=5, shad=3,
               pills=[("#FF2E63", "#FFFFFF"), ("#FFD60A", "#111111"), ("#00C853", "#FFFFFF"),
                      ("#2F6BFF", "#FFFFFF"), ("#A64DFF", "#FFFFFF")]),
+    "popsticker": S("Pop Sticker", "Montserrat-Black.ttf", 118, 2, case="upper", mode="pop",
+                    font2="Silkscreen-Bold.ttf", decos=["sparkle", "dots", "xmark", "smiley", "squares", "burst"],
+                    combos=[[("blue", "white", "torn"), ("lime", "black", "torn")],
+                            [("black", "white", "pixel"), ("pink", "black", "torn")],
+                            [("blue", "white", "round"), ("lime", "black", "round")],
+                            [("white", "black", "round"), ("cyan", "white", "torn")],
+                            [("pink", "white", "torn"), ("black", "white", "torn")],
+                            [("lime", "black", "torn"), ("blue", "white", "round")]]),
+    "popblock": S("Pop Block", "Anton-Regular.ttf", 150, 2, case="upper", mode="pop", slant=True,
+                  decos=["burst", "smiley", "sparkle", "barcode", "circle", "squares"],
+                  combos=[[("cyan", "black", "torn"), ("pink", "white", "torn")],
+                          [("black", "white", "torn"), ("pink", "black", "torn")],
+                          [("lime", "black", "round"), ("purple", "white", "torn")],
+                          [("yellow", "black", "torn"), ("purple", "white", "round")],
+                          [("white", "black", "round"), ("purple", "white", "torn")],
+                          [("pink", "white", "torn"), ("purple", "white", "torn")],
+                          [("cyan", "black", "round"), ("pink", "white", "torn")]]),
 }
 
 _FONTS = {}
@@ -186,6 +205,8 @@ def events(words, v, resx, y=1150):
         mode = v.get("mode")
         if mode == "pill":
             out += pill_events(v, g, wi, case, x, y, resx, gend)
+        elif mode == "pop":
+            out += pop_events(v, g, gi, case, x, y, resx, gend)
         elif mode in ("karaoke", "type"):
             head = "{" + fill(base + rf"\pos({x},{y})" + v.get("intro", ""), gi, 0, fs, fs2) + "}"
             if mode == "karaoke":  # el color barre cada palabra mientras se dice
@@ -268,6 +289,140 @@ def pill_events(v, g, wi, case, x, y, resx, gend):
                          "{" + rf"\bord{v.get('bord', 6)}\shad{v.get('shad', 0)}\c&HFFFFFF&" + "}") + t
                         for j, t in enumerate(words))
         out.append((1, s, e, "{" + rf"\an5\pos({x},{y})\fs{fs}" + (r"\fad(80,0)" if i == 0 else "") + "}" + body))
+    return out
+
+
+# ---- Títulos pop: cada palabra en un bloque de color inclinado, con decoraciones ----
+PAL = dict(blue="#4B1FFF", lime="#C8FF00", pink="#FF138A", cyan="#2EE6D6", yellow="#FFE500",
+           purple="#7B2BFF", black="#0D0D0D", white="#FFFFFF")
+DECO_COLS = dict(burst=["pink", "lime", "yellow", "cyan"], smiley=["pink", "cyan", "lime", "yellow"],
+                 squares=["blue", "lime", "cyan", "pink"], circle=["pink", "lime", "cyan"], xmark=["pink"],
+                 dots=["white"], sparkle=["white"], barcode=["white"])
+
+
+def _n(*p):
+    return " ".join(f"{q:.0f}" for q in p)
+
+
+def poly(pts, cw=True):
+    """Polígono cerrado para dibujo ASS; los de sentido contrario (cw=False) hacen huecos."""
+    area = sum(x0 * y1 - x1 * y0 for (x0, y0), (x1, y1) in zip(pts, pts[1:] + pts[:1]))
+    if (area > 0) != cw:
+        pts = pts[::-1]
+    return "m " + _n(*pts[0]) + " l " + " ".join(_n(*p) for p in pts[1:]) + " "
+
+
+def circle(cx, cy, r, cw=True, n=28):
+    return poly([(cx + r * math.cos(2 * math.pi * i / n), cy + r * math.sin(2 * math.pi * i / n)) for i in range(n)], cw)
+
+
+def block_path(w, h, shape, rnd):
+    """Bloque detrás de la palabra: papel rasgado, píxel o redondeado."""
+    if shape == "torn":
+        top = [(x, rnd.uniform(-5, 5)) for x in range(0, int(w), 22)] + [(w, rnd.uniform(-5, 5))]
+        bot = [(x, h + rnd.uniform(-6, 6)) for x in range(int(w), 0, -22)] + [(0, h + rnd.uniform(-6, 6))]
+        return poly(top + bot)
+    if shape == "pixel":
+        s = h / 6
+        return poly([(s, 0), (w - s, 0), (w - s, s), (w, s), (w, h - s), (w - s, h - s), (w - s, h), (s, h),
+                     (s, h - s), (0, h - s), (0, s), (s, s)])
+    r, pts = min(h * 0.28, 26), []
+    for cx, cy, a0 in ((w - r, r, -90), (w - r, h - r, 0), (r, h - r, 90), (r, r, 180)):
+        pts += [(cx + r * math.cos(math.radians(a0 + 15 * i)), cy + r * math.sin(math.radians(a0 + 15 * i)))
+                for i in range(7)]
+    return poly(pts)
+
+
+def deco_path(kind, rnd):
+    """Decoraciones: estrella, puntos, rayitas, cruz, carita, código de barras, círculo o cuadrito."""
+    if kind == "burst":
+        k = rnd.choice([10, 12, 14])
+        return poly([((46 if i % 2 == 0 else 32) * math.cos(math.pi * i / k),
+                      (46 if i % 2 == 0 else 32) * math.sin(math.pi * i / k)) for i in range(2 * k)])
+    if kind == "dots":
+        return "".join(circle(i * 22, j * 22, 5) for i in range(4) for j in range(3))
+    if kind == "sparkle":
+        out = ""
+        for a in (-150, -120, -90):
+            ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a))
+            out += poly([(20 * ux - 4 * uy, 20 * uy + 4 * ux), (56 * ux - 4 * uy, 56 * uy + 4 * ux),
+                         (56 * ux + 4 * uy, 56 * uy - 4 * ux), (20 * ux + 4 * uy, 20 * uy - 4 * ux)])
+        return out
+    if kind == "xmark":
+        a, L, q = 8, 30, math.radians(45)
+        pts = [(a, -L), (a, -a), (L, -a), (L, a), (a, a), (a, L), (-a, L), (-a, a), (-L, a), (-L, -a), (-a, -a), (-a, -L)]
+        return poly([(px * math.cos(q) - py * math.sin(q), px * math.sin(q) + py * math.cos(q)) for px, py in pts])
+    if kind == "smiley":
+        mouth = ([(18 * math.cos(math.radians(t)), 6 + 14 * math.sin(math.radians(t))) for t in range(10, 171, 20)]
+                 + [(11 * math.cos(math.radians(t)), 6 + 7 * math.sin(math.radians(t))) for t in range(170, 9, -20)])
+        return circle(0, 0, 40) + circle(-13, -11, 6, False) + circle(13, -11, 6, False) + poly(mouth, False)
+    if kind == "barcode":
+        out, xb = poly([(0, 0), (150, 0), (150, 70), (0, 70)]), 14
+        while xb < 130:
+            bw = rnd.choice([3, 3, 5, 8])
+            out += poly([(xb, 12), (xb + bw, 12), (xb + bw, 58), (xb, 58)], False)
+            xb += bw + rnd.choice([3, 4, 6])
+        return out
+    if kind == "circle":
+        return circle(0, 0, 30)
+    return poly([(0, 0), (22, 0), (22, 22), (0, 22)])
+
+
+def pop_events(v, g, gi, case, x, y, resx, gend):
+    """Título pop: cada palabra aparece en su propio bloque de color inclinado, con decoraciones."""
+    rnd = random.Random(gi * 7919 + 17)
+    combo, blocks, out = v["combos"][gi % len(v["combos"])], [], []
+    for i, w in enumerate(g):
+        bg, fg, shape = combo[i % len(combo)]
+        t = case(w["w"]).strip(".,!?¿¡")
+        fnt = v["font"]
+        if shape == "pixel" and "font2" in v and all(ord(ch) in font(v["font2"])[1] for ch in t):
+            fnt = v["font2"]
+        fs = v["size"]
+        tw = text_width(fnt, t, fs)
+        if tw > 820:  # palabras largas se achican para caber
+            fs = int(fs * 820 / tw)
+            tw = text_width(fnt, t, fs)
+        unit, (asc_u, cap_u) = font(fnt)[3], vmetrics(fnt)
+        cap = cap_u * fs / unit
+        blocks.append(dict(t=t, bg=bg, fg=fg, shape=shape, fnt=fnt, fs=fs, cap=cap, asc=asc_u * fs / unit,
+                           bw=max(tw + 0.9 * cap, cap * 2.3), bh=cap * 1.9))
+    top = y - sum(b["bh"] for b in blocks) * 0.46
+    for i, b in enumerate(blocks):  # apilados, desplazados e inclinados en sentidos opuestos
+        b["cx"] = x + (rnd.uniform(-40, -15) if i % 2 == 0 else rnd.uniform(15, 40)) * (len(blocks) > 1)
+        b["cy"] = top + b["bh"] * 0.46
+        top += b["bh"] * 0.92
+        b["rot"] = rnd.uniform(3, 7) if i % 2 == 0 else -rnd.uniform(1.5, 3.5)
+    for i, (w, b) in enumerate(zip(g, blocks)):
+        d = int((gend - w["s"]) * 1000)
+        r0 = b["rot"] + (14 if i % 2 == 0 else -14)
+        anim = (rf"\org({b['cx']:.0f},{b['cy']:.0f})\frz{r0:.1f}\fscx0\fscy0"
+                rf"\t(0,120,\frz{b['rot']:.1f}\fscx112\fscy112)\t(120,200,\fscx100\fscy100)"
+                rf"\t(240,700,\frz{b['rot'] + 1.2:.1f})\t(700,1160,\frz{b['rot']:.1f})" + (rf"\t({d - 80},{d},\fscx0\fscy0)" if d >= 450 else ""))
+        edge = r"\bord3\3c&HFFFFFF&" if b["bg"] == "black" else r"\bord0"
+        out.append((1, w["s"], gend, "{" + rf"\an5\pos({b['cx']:.0f},{b['cy']:.0f})\1c{c(PAL[b['bg']])}{edge}\shad0"
+                    + anim + r"\p1}" + block_path(b["bw"], b["bh"], b["shape"], rnd)))
+        ty = b["cy"] + b["fs"] / 2 - b["asc"] + b["cap"] / 2  # centra las mayúsculas en el bloque
+        slant = r"\fax-0.12" if v.get("slant") and i % 2 == 1 else ""
+        out.append((2, w["s"], gend, "{" + rf"\an5\pos({b['cx']:.0f},{ty:.0f})\fn{font(b['fnt'])[0]}\fs{b['fs']}"
+                    rf"\c{c(PAL[b['fg']])}\bord0\shad0{slant}" + anim + "}" + b["t"]))
+    left, right = min(b["cx"] - b["bw"] / 2 for b in blocks), max(b["cx"] + b["bw"] / 2 for b in blocks)
+    top, bottom = min(b["cy"] - b["bh"] / 2 for b in blocks), max(b["cy"] + b["bh"] / 2 for b in blocks)
+    spots = [(left - 10, top - 30), (right + 15, top - 10), (right - 30, bottom + 40), (left + 40, bottom + 35),
+             ((left + right) / 2, top - 75)]
+    rnd.shuffle(spots)
+    for k, (dx, dy) in enumerate(spots[:3]):
+        kind = rnd.choice(v["decos"])
+        s = min(g[0]["s"] + 0.15 + 0.07 * k, gend - 0.05)
+        d = int((gend - s) * 1000)
+        r0 = rnd.uniform(-20, 20)
+        spin = rf"\t(0,{d},\frz{r0 + 35:.0f})" if kind == "burst" else ""
+        for j in range(3 if kind == "squares" else 1):
+            px = min(max(dx + (rnd.uniform(-40, 40) if j else 0), 50), resx - 50)
+            py = dy + (rnd.uniform(-40, 40) if j else 0)
+            out.append((3, s, gend, "{" + rf"\an5\pos({px:.0f},{py:.0f})\1c{c(PAL[rnd.choice(DECO_COLS[kind])])}"
+                        rf"\bord0\shad0\frz{r0:.0f}\fscx0\fscy0\t(0,160,\fscx120\fscy120)\t(160,240,\fscx100\fscy100)"
+                        rf"{spin}" + (rf"\t({d - 80},{d},\fscx0\fscy0)" if d >= 450 else "") + r"\p1}" + deco_path(kind, rnd)))
     return out
 
 
